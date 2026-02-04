@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grace | Professional Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #6366f1; 
+      --accent-color: #4f46e5;
+      --text-main: #1f2937;
+      --glass-bg: rgba(255, 255, 255, 0.9);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f8fafc 0%, #efeef1 100%);
+      background-attachment: fixed;
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(15px);
+      padding: 15px 0;
+      text-align: center;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+    nav a {
+      color: var(--text-main);
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover { color: var(--primary-color); }
+
+    /* Home / Hero Section */
+    header {
+      padding: 160px 20px 60px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .profile-img {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 8px solid white;
+      box-shadow: 0 20px 50px rgba(99, 102, 241, 0.15);
+      margin-bottom: 30px;
+    }
+
+    header h1 { font-size: 3.5rem; margin-bottom: 10px; color: #111827; }
+    header .subtitle { font-size: 1.4rem; color: var(--primary-color); font-weight: 600; margin-bottom: 20px; }
+    header .bio-short { max-width: 600px; color: #4b5563; margin-bottom: 30px; font-size: 1.1rem; }
+
+    /* New Highlight Stats */
+    .hero-stats {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .stat-box {
+      background: white;
+      padding: 15px 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .stat-box span { display: block; font-weight: 600; color: var(--primary-color); }
+    .stat-box small { color: #6b7280; text-transform: uppercase; letter-spacing: 1px; }
+
+    .btn-main {
+      background: var(--primary-color);
+      color: white;
+      padding: 12px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+      box-shadow: 0 10px 20px rgba(99, 102, 241, 0.2);
+    }
+
+    .btn-main:hover { background: var(--accent-color); transform: translateY(-3px); }
+
+    /* Container & Sections */
+    .container { max-width: 850px; margin: 0 auto 100px; padding: 0 20px; }
+
+    section {
+      background: var(--glass-bg);
+      padding: 50px;
+      border-radius: 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    }
+
+    h2 { margin-bottom: 20px; color: var(--primary-color); font-size: 1.8rem; }
+
+    footer { text-align: center; padding: 40px; color: #94a3b8; font-size: 0.9rem; }
+
+    @media (max-width: 600px) {
+      .profile-img { width: 220px; height: 220px; }
+      header h1 { font-size: 2.5rem; }
+      .hero-stats { gap: 10px; }
+    }
+  </style>
+</head>
+<body id="home">
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <img src="20251117_025900.png" alt="Grace" class="profile-img">
+    <h1>I'm Grace.</h1>
+    <p class="subtitle">IT Student & Creative Developer</p>
+    <p class="bio-short">
+      Passionate about bridging the gap between design and technology. 
+      I specialize in creating clean interfaces and solving complex digital problems.
+    </p>
+
+    <div class="hero-stats">
+      <div class="stat-box">
+        <span>1rst Year</span>
+        <small>BIT-CIT Student</small>
+      </div>
+      <div class="stat-box">
+        <span>Mati City</span>
+        <small>Davao Oriental</small>
+      </div>
+      <div class="stat-box">
+        <span>Open</span>
+        <small>For Projects</small>
+      </div>
+    </div>
+
+    <a href="#contact" class="btn-main">Work with me</a>
+  </header>
+
+  <div class="container">
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        My journey in IT began with a curiosity for how websites are built. 
+        Over time, that curiosity evolved into a focus on <strong>Front-End Development</strong> 
+        and <strong>UI/UX Design</strong>. I am currently honing my skills in HTML, CSS, 
+        and JavaScript while exploring modern frameworks.
+      </p>
+      <p style="margin-top: 15px;">
+        I believe that every project is an opportunity to learn something new and 
+        to create a better experience for users.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Have a question or want to collaborate? Feel free to reach out!</p>
+      <div style="margin-top: 20px;">
+        <p><strong>Email:</strong> gracegrenio@email.com</p>
+        <p><strong>Phone No.:</strong> 09757712081</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Grace | Built with passion</p>
+  </footer>
+
+</body>
+</html>
